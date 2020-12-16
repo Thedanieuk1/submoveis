@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?> <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp">
+
+
+        <EditText
+            android:id="@+id/edTxtNomePokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Digite o nome do Pokemon"
+            android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/tipoPrimario"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/tipoSecundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/bttAddNovoPokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="adicionarPokemon"
+            android:text="Adicionar Pokemon" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
